@@ -1,3 +1,33 @@
+import angularIcon from '../assets/icons/angular.svg'
+import codeIcon from '../assets/icons/code.svg'
+import cssIcon from '../assets/icons/css.svg'
+import databaseIcon from '../assets/icons/database.svg'
+import djangoIcon from '../assets/icons/django.svg'
+import dockerIcon from '../assets/icons/docker.svg'
+import firebaseIcon from '../assets/icons/firebase.svg'
+import gitIcon from '../assets/icons/git.svg'
+import githubIcon from '../assets/icons/github.svg'
+import globeIcon from '../assets/icons/globe.svg'
+import ionicIcon from '../assets/icons/ionic.svg'
+import javascriptIcon from '../assets/icons/javascript.svg'
+import layersIcon from '../assets/icons/layers.svg'
+import mongodbIcon from '../assets/icons/mongodb.svg'
+import netlifyIcon from '../assets/icons/netlify.svg'
+import nodeIcon from '../assets/icons/nodedotjs.svg'
+import postgresqlIcon from '../assets/icons/postgresql.svg'
+import pythonIcon from '../assets/icons/python.svg'
+import reactIcon from '../assets/icons/react.svg'
+import rocketIcon from '../assets/icons/rocket.svg'
+import sassIcon from '../assets/icons/sass.svg'
+import serverIcon from '../assets/icons/server.svg'
+import shieldCheckIcon from '../assets/icons/shield-check.svg'
+import smartphoneIcon from '../assets/icons/smartphone.svg'
+import tailwindIcon from '../assets/icons/tailwindcss.svg'
+import typescriptIcon from '../assets/icons/typescript.svg'
+import viteIcon from '../assets/icons/vite.svg'
+import workflowIcon from '../assets/icons/workflow.svg'
+import zapIcon from '../assets/icons/zap.svg'
+
 export const projects = [
   {
     index: '01',
@@ -49,17 +79,33 @@ export const projects = [
 
 export const expertise = [
   {
+    icon: codeIcon,
     title: 'Frontend Systems',
     text: 'Modern interfaces, responsive layouts, dashboards, PWAs, and visual systems built with product-level polish.',
   },
   {
+    icon: serverIcon,
     title: 'Backend Architecture',
     text: 'APIs, authentication, database models, admin logic, and server-side foundations designed to support real workflows.',
   },
   {
+    icon: layersIcon,
     title: 'Product Execution',
     text: 'From visual direction to implementation, optimization, deployment, and iteration with a clear premium standard.',
   },
+]
+
+export const skills = [
+  ['Interface Engineering', codeIcon],
+  ['Data Architecture', databaseIcon],
+  ['Backend Systems', serverIcon],
+  ['Mobile-first PWAs', smartphoneIcon],
+  ['Web Platforms', globeIcon],
+  ['Secure Workflows', shieldCheckIcon],
+  ['CI/CD Pipelines', workflowIcon],
+  ['Modular Architecture', layersIcon],
+  ['Performance Polish', zapIcon],
+  ['Product Launches', rocketIcon],
 ]
 
 export const processSteps = [
@@ -74,4 +120,26 @@ export const stackGroups = [
   ['Backend', 'Node.js', 'Django', 'REST APIs', 'Authentication', 'Business Logic'],
   ['Data', 'MongoDB', 'PostgreSQL', 'Firebase', 'Scalable Models'],
   ['Delivery', 'GitHub', 'Azure DevOps', 'CI/CD', 'Netlify', 'Production'],
+]
+
+export const technologies = [
+  ['Angular', angularIcon],
+  ['Ionic', ionicIcon],
+  ['React', reactIcon],
+  ['JavaScript', javascriptIcon],
+  ['TypeScript', typescriptIcon],
+  ['Node.js', nodeIcon],
+  ['Django', djangoIcon],
+  ['Python', pythonIcon],
+  ['MongoDB', mongodbIcon],
+  ['PostgreSQL', postgresqlIcon],
+  ['Firebase', firebaseIcon],
+  ['Tailwind CSS', tailwindIcon],
+  ['Sass', sassIcon],
+  ['CSS', cssIcon],
+  ['Git', gitIcon],
+  ['GitHub', githubIcon],
+  ['Docker', dockerIcon],
+  ['Netlify', netlifyIcon],
+  ['Vite', viteIcon],
 ]

@@ -1,3 +1,7 @@
+import { motion } from 'framer-motion'
+import arrowRightIcon from '../../assets/icons/arrow-right.svg'
+import { IconTile } from './IconTile'
+
 type ButtonLinkProps = {
   children: React.ReactNode
   href: string
@@ -12,13 +16,17 @@ export function ButtonLink({
   external = false,
 }: ButtonLinkProps) {
   return (
-    <a
+    <motion.a
       className={`button ${variant}`}
       href={href}
+      whileHover={{ y: -2 }}
+      whileTap={{ scale: 0.98 }}
+      transition={{ duration: 0.18, ease: 'easeOut' }}
       rel={external ? 'noreferrer' : undefined}
       target={external ? '_blank' : undefined}
     >
-      {children}
-    </a>
+      <span>{children}</span>
+      <IconTile className="button-icon" src={arrowRightIcon} />
+    </motion.a>
   )
 }
