@@ -9,8 +9,8 @@
   inset: 0;
   z-index: -2;
   background:
-    radial-gradient(circle at 84% 12%, rgba(127, 29, 29, 0.32), transparent 34%),
-    radial-gradient(circle at 10% 48%, rgba(185, 28, 28, 0.11), transparent 28%),
+    radial-gradient(circle at 84% 12%, rgba(20, 184, 166, 0.28), transparent 34%),
+    radial-gradient(circle at 10% 48%, rgba(34, 211, 238, 0.1), transparent 28%),
     linear-gradient(180deg, #050505 0%, #09090a 44%, #050505 100%);
 }
 
@@ -116,10 +116,10 @@
   width: fit-content;
   margin-bottom: 22px;
   padding: 8px 12px;
-  border: 1px solid rgba(185, 28, 28, 0.32);
+  border: 1px solid rgba(34, 211, 238, 0.3);
   border-radius: 999px;
-  color: #f0b4b4;
-  background: rgba(185, 28, 28, 0.1);
+  color: #b8f7ee;
+  background: rgba(20, 184, 166, 0.09);
   font-family: var(--mono);
   font-size: 12px;
 }
@@ -174,8 +174,8 @@
 .button.primary {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  background: linear-gradient(180deg, #c52222, #801919);
-  box-shadow: 0 16px 40px rgba(127, 29, 29, 0.32);
+  background: linear-gradient(135deg, #0891b2, #0f766e 52%, #047857);
+  box-shadow: 0 16px 40px rgba(20, 184, 166, 0.28);
 }
 
 .button.secondary {
@@ -200,6 +200,7 @@
   position: relative;
   min-height: 510px;
   padding: 18px;
+  overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 8px;
   background:
@@ -216,7 +217,7 @@
   inset: -1px;
   z-index: -1;
   border-radius: inherit;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(185, 28, 28, 0.38), transparent 70%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(34, 211, 238, 0.24), rgba(52, 211, 153, 0.22), transparent 72%);
   opacity: 0.8;
 }
 
@@ -239,7 +240,7 @@
 }
 
 .frame-topbar span:first-child {
-  background: #b91c1c;
+  background: #22d3ee;
 }
 
 .frame-topbar strong {
@@ -305,8 +306,8 @@
 .chart-bars i {
   display: block;
   border-radius: 8px 8px 2px 2px;
-  background: linear-gradient(180deg, #d13a3a, #511111);
-  box-shadow: 0 10px 26px rgba(185, 28, 28, 0.24);
+  background: linear-gradient(180deg, #34d399, #0e7490);
+  box-shadow: 0 10px 26px rgba(34, 211, 238, 0.2);
 }
 
 .chart-panel strong {
@@ -326,10 +327,10 @@
 
 .pipeline span {
   padding: 12px 8px;
-  border: 1px solid rgba(185, 28, 28, 0.26);
+  border: 1px solid rgba(34, 211, 238, 0.24);
   border-radius: 8px;
-  color: #f4d0d0;
-  background: rgba(185, 28, 28, 0.08);
+  color: #c8fff3;
+  background: rgba(20, 184, 166, 0.08);
   font-family: var(--mono);
   font-size: 11px;
   text-align: center;
@@ -398,8 +399,8 @@
 
 .project-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(185, 28, 28, 0.48);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.09), rgba(185, 28, 28, 0.045));
+  border-color: rgba(34, 211, 238, 0.38);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.09), rgba(20, 184, 166, 0.045));
 }
 
 .project-info {
@@ -460,7 +461,7 @@
   padding: 16px;
   overflow: hidden;
   background:
-    linear-gradient(135deg, rgba(185, 28, 28, 0.1), transparent 38%),
+    linear-gradient(135deg, rgba(34, 211, 238, 0.09), transparent 38%),
     rgba(7, 7, 8, 0.86);
 }
 
@@ -474,7 +475,7 @@
 }
 
 .preview-header a {
-  color: #f0b4b4;
+  color: #a7f3d0;
   text-decoration: none;
 }
 
@@ -500,7 +501,7 @@
   height: 8px;
   margin-top: 58px;
   border-radius: 999px;
-  background: linear-gradient(90deg, #b91c1c, rgba(255, 255, 255, 0.08));
+  background: linear-gradient(90deg, #22d3ee, #34d399, rgba(255, 255, 255, 0.08));
 }
 
 .split-section {
@@ -588,10 +589,10 @@
 .contact-inner {
   max-width: 900px;
   padding: 62px;
-  border: 1px solid rgba(185, 28, 28, 0.28);
+  border: 1px solid rgba(34, 211, 238, 0.24);
   border-radius: 8px;
   background:
-    linear-gradient(135deg, rgba(185, 28, 28, 0.14), rgba(255, 255, 255, 0.04)),
+    linear-gradient(135deg, rgba(34, 211, 238, 0.1), rgba(52, 211, 153, 0.08), rgba(255, 255, 255, 0.035)),
     rgba(255, 255, 255, 0.025);
 }
 
@@ -723,6 +724,7 @@
   }
 
   .hero-visual {
+    width: 100%;
     min-width: 0;
     overflow: hidden;
   }
