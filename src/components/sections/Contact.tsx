@@ -1,3 +1,5 @@
+import { Send } from 'lucide-react'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa6'
 import { ButtonLink } from '../ui/ButtonLink'
 
 export function Contact() {
@@ -11,12 +13,18 @@ export function Contact() {
         </p>
         <div className="contact-actions">
           <ButtonLink href="mailto:hello@leolopez.dev">Start a conversation</ButtonLink>
-          <ButtonLink href="https://github.com/" variant="secondary" external>
+          <a className="button secondary contact-link" href="mailto:hello@leolopez.dev">
+            <Send size={16} strokeWidth={1.8} />
+            Email
+          </a>
+          <a className="button secondary contact-link" href="https://github.com/" target="_blank" rel="noreferrer">
+            <FaGithub size={16} />
             GitHub
-          </ButtonLink>
-          <ButtonLink href="https://www.linkedin.com/" variant="secondary" external>
+          </a>
+          <a className="button secondary contact-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+            <FaLinkedinIn size={15} />
             LinkedIn
-          </ButtonLink>
+          </a>
         </div>
       </div>
     </section>

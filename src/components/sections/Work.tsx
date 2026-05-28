@@ -1,4 +1,8 @@
+import { motion } from 'framer-motion'
 import { projects } from '../../data/portfolio'
+import folderIcon from '../../assets/icons/folder.svg'
+import { IconTile } from '../ui/IconTile'
+import { fadeUp, staggerContainer } from '../ui/motionPresets'
 import { SectionHeading } from '../ui/SectionHeading'
 
 export function Work() {
@@ -8,14 +12,26 @@ export function Work() {
         A focused collection of platforms, dashboards, and digital systems designed with production requirements, scalability, and visual polish in mind.
       </SectionHeading>
 
-      <div className="projects-list">
+      <motion.div
+        className="projects-list"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.12 }}
+        variants={staggerContainer}
+      >
         {projects.map((project, projectIndex) => (
-          <article
-            className={`project-card reveal ${projectIndex === 0 ? 'featured' : ''}`}
+          <motion.article
+            className={`project-card ${projectIndex === 0 ? 'featured' : ''}`}
             key={project.name}
+            variants={fadeUp}
+            whileHover={{ y: -5 }}
+            transition={{ duration: 0.22, ease: 'easeOut' }}
           >
             <div className="project-info">
-              <span className="project-index">{project.index}</span>
+              <span className="project-index">
+                <IconTile src={folderIcon} />
+                {project.index}
+              </span>
               <p className="project-type">{project.type}</p>
               <h3>{project.name}</h3>
               <p className="project-summary">{project.summary}</p>
@@ -47,9 +63,9 @@ export function Work() {
                 </div>
               </div>
             </div>
-          </article>
+          </motion.article>
         ))}
-      </div>
+      </motion.div>
     </section>
   )
 }

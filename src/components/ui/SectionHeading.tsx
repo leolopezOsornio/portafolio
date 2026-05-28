@@ -1,3 +1,5 @@
+import { Reveal } from './Reveal'
+
 type SectionHeadingProps = {
   kicker: string
   title: string
@@ -6,10 +8,10 @@ type SectionHeadingProps = {
 
 export function SectionHeading({ kicker, title, children }: SectionHeadingProps) {
   return (
-    <div className="section-heading reveal">
+    <Reveal className="section-heading">
       <span className="section-kicker">{kicker}</span>
       <h2>{title}</h2>
       {children ? <p>{children}</p> : null}
-    </div>
+    </Reveal>
   )
 }
