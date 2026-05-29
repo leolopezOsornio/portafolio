@@ -12,16 +12,16 @@ export function Contact() {
           Available for remote roles, freelance projects, and product-focused collaborations.
         </p>
         <div className="contact-actions">
-          <ButtonLink href="mailto:hello@leolopez.dev">Start a conversation</ButtonLink>
-          <a className="button secondary contact-link" href="mailto:hello@leolopez.dev">
+          <ButtonLink href="mailto:leol83377@gmail.com">Start a conversation</ButtonLink>
+          <a className="button secondary contact-link" href="mailto:leol83377@gmail.com">
             <Send size={16} strokeWidth={1.8} />
             Email
           </a>
-          <a className="button secondary contact-link" href="https://github.com/" target="_blank" rel="noreferrer">
+          <a className="button secondary contact-link" href="https://github.com/leolopezOsornio" target="_blank" rel="noreferrer">
             <FaGithub size={16} />
             GitHub
           </a>
-          <a className="button secondary contact-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+          <a className="button secondary contact-link" href="https://www.linkedin.com/in/leonardo-lópez-osornio-84b469354" target="_blank" rel="noreferrer">
             <FaLinkedinIn size={15} />
             LinkedIn
           </a>
