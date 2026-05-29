@@ -133,7 +133,7 @@
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02)),
     rgba(255, 255, 255, 0.025);
-  opacity: 0.72;
+  opacity: 1;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
   transition:
     opacity 220ms ease,
@@ -146,8 +146,8 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: grayscale(1) brightness(1.8) contrast(0.9);
-  opacity: 0.86;
+  filter: brightness(0) saturate(100%) invert(78%) sepia(7%) saturate(222%) hue-rotate(191deg) brightness(94%) contrast(86%);
+  opacity: 0.92;
   transition: filter 220ms ease, opacity 220ms ease;
 }
 
@@ -167,7 +167,7 @@ button:hover .icon-tile img,
 .expertise-card:hover .icon-tile img,
 .skill-chip:hover .icon-tile img,
 .project-card:hover .project-index .icon-tile img {
-  filter: grayscale(0) brightness(1.12) contrast(1);
+  filter: brightness(0) saturate(100%) invert(89%) sepia(40%) saturate(742%) hue-rotate(123deg) brightness(98%) contrast(96%);
   opacity: 1;
 }
 
