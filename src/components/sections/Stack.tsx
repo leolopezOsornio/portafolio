@@ -18,9 +18,9 @@ export function Stack() {
         viewport={{ once: true, amount: 0.18 }}
         variants={staggerContainer}
       >
-        {technologies.map(([name, icon]) => (
+        {technologies.map(([name, icon, color, filter]) => (
           <motion.div key={name} variants={fadeUp}>
-            <TechnologyLogo icon={icon} name={name} />
+            <TechnologyLogo color={color} filter={filter} icon={icon} name={name} />
           </motion.div>
         ))}
       </motion.div>
