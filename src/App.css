@@ -708,6 +708,7 @@ button:hover .icon-tile img,
   padding: 13px;
   color: var(--text-muted);
   font-size: 13px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
   transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
 }
 
@@ -715,15 +716,26 @@ button:hover .icon-tile img,
   width: 24px;
   height: 24px;
   object-fit: contain;
-  opacity: 0.58;
-  filter: grayscale(1) saturate(0) brightness(1.28);
+  opacity: 0.86;
+  filter: var(--tech-filter);
   transition: filter 220ms ease, opacity 220ms ease, transform 220ms ease;
 }
 
 .technology-logo:hover img {
-  opacity: 0.95;
-  filter: grayscale(0) saturate(0.72) brightness(1.04);
+  opacity: 1;
+  filter: var(--tech-filter) drop-shadow(0 0 14px color-mix(in srgb, var(--tech-color) 64%, transparent));
   transform: translateY(-1px);
+}
+
+.technology-logo:hover {
+  border-color: color-mix(in srgb, var(--tech-color) 48%, transparent);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--tech-color) 15%, transparent), rgba(255, 255, 255, 0.04) 58%),
+    rgba(255, 255, 255, 0.045);
+}
+
+.technology-logo:hover span {
+  color: color-mix(in srgb, var(--tech-color) 72%, white);
 }
 
 .stack-group {
