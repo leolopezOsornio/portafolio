@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { projects } from '../../data/portfolio'
 import folderIcon from '../../assets/icons/folder.svg'
 import { IconTile } from '../ui/IconTile'
-import { fadeUp, staggerContainer } from '../ui/motionPresets'
+import { fadeUp } from '../ui/motionPresets'
 import { SectionHeading } from '../ui/SectionHeading'
 
 export function Work() {
@@ -12,17 +12,14 @@ export function Work() {
         A focused collection of platforms, dashboards, and digital systems designed with production requirements, scalability, and visual polish in mind.
       </SectionHeading>
 
-      <motion.div
-        className="projects-list"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.12 }}
-        variants={staggerContainer}
-      >
+      <div className="projects-list">
         {projects.map((project, projectIndex) => (
           <motion.article
             className={`project-card ${projectIndex === 0 ? 'featured' : ''}`}
             key={project.name}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
             variants={fadeUp}
             whileHover={{ y: -5 }}
             transition={{ duration: 0.22, ease: 'easeOut' }}
@@ -33,7 +30,13 @@ export function Work() {
                 {project.index}
               </span>
               <p className="project-type">{project.type}</p>
-              <h3>{project.name}</h3>
+              <h3 className={project.logo ? 'project-logo-title' : undefined}>
+                {project.logo ? (
+                  <img src={project.logo} alt={`${project.name} logo`} />
+                ) : (
+                  project.name
+                )}
+              </h3>
               <p className="project-summary">{project.summary}</p>
               <div className="project-stack">
                 {project.stack.map((item) => (
@@ -65,7 +68,7 @@ export function Work() {
             </div>
           </motion.article>
         ))}
-      </motion.div>
+      </div>
     </section>
   )
 }
