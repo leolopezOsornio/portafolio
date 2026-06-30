@@ -27,6 +27,9 @@ import typescriptIcon from '../assets/icons/typescript.svg'
 import viteIcon from '../assets/icons/vite.svg'
 import workflowIcon from '../assets/icons/workflow.svg'
 import zapIcon from '../assets/icons/zap.svg'
+import kustikaLogo from '../assets/KUSTIKA - LOGOS PNG.png'
+import joliLogo from '../assets/LOGO-JOLI.jpg'
+import woawLogo from '../assets/logo-woaw.png'
 
 export const projects = [
   {
@@ -37,6 +40,8 @@ export const projects = [
     stack: ['Ionic', 'Angular', 'Node.js', 'MongoDB'],
     summary:
       'Automotive application shaped into a premium product interface with dashboards, authentication, document workflows, multimedia uploads, and administration tools.',
+    logo: woawLogo,
+    url: 'https://wo-aw.com/home',
     highlights: [
       'Authentication flows',
       'Dashboard experience',
@@ -46,12 +51,13 @@ export const projects = [
   },
   {
     index: '02',
-    name: 'JOLIWEB',
+    name: 'JOLI',
     type: 'Corporate Web Platform',
     role: 'Frontend Development / Responsive UI',
     stack: ['React-ready UI', 'Responsive Design', 'Production'],
     summary:
       'Corporate experience built for a real company, focused on clean structure, polished presentation, responsive behavior, and production delivery.',
+    logo: joliLogo,
     highlights: [
       'Live production site',
       'Corporate visual system',
@@ -62,17 +68,19 @@ export const projects = [
   },
   {
     index: '03',
-    name: 'CSTI',
-    type: 'Scalable E-commerce System',
-    role: 'Full Stack Development',
-    stack: ['Django', 'PostgreSQL', 'REST APIs'],
+    name: 'KUSTIKA',
+    type: 'Creative Web Platform',
+    role: 'Frontend Development / Brand UI',
+    stack: ['Responsive Design', 'Production', 'Brand Experience'],
     summary:
-      'Commerce platform with catalog, cart, wishlist, admin tooling, backend logic, API integration, and a scalable data foundation.',
+      'Digital presence built around a strong visual identity, responsive layouts, polished brand presentation, and production-ready web delivery.',
+    logo: kustikaLogo,
+    url: 'https://kustika.com.mx/',
     highlights: [
-      'Catalog logic',
-      'Shopping cart',
-      'Wishlist',
-      'Admin panel',
+      'Brand-led interface',
+      'Responsive site',
+      'Visual polish',
+      'Production delivery',
     ],
   },
 ]

@@ -519,6 +519,32 @@ button:hover .icon-tile img,
   line-height: 0.9;
 }
 
+.project-card h3.project-logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 118px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.project-card h3.project-logo-title img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  max-height: 118px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.project-card h3.project-logo-title img[alt='KUSTIKA logo'] {
+  filter: drop-shadow(0 10px 26px rgba(0, 0, 0, 0.2));
+}
+
 .project-summary {
   max-width: 520px;
   margin-top: 22px;
@@ -954,6 +980,10 @@ button:hover .icon-tile img,
   .project-card {
     min-height: auto;
     padding: 18px;
+  }
+
+  .project-card h3.project-logo-title {
+    min-height: 96px;
   }
 
   .section,
